@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --clr-light-bg: rgb(255, 255, 255);
+  --clr-dark-bg: rgb(31, 31, 32);
+  --clr-white-000: rgb(255, 255, 255);
+  --clr-white-100: rgb(241, 237, 237);
+  --clr-white-200: rgb(230, 230, 230);
+  --clr-white-300: rgb(216, 214, 226);
+  --clr-white-900: rgb(102, 102, 102);
+  --clr-black-000: rgb(0,0,0);
+  --clr-black-100: rgb(29, 29, 29);
+  --clr-black-200: rgb(48, 47, 47);
+  --clr-black-300: rgb(65, 65, 65);
+
+  --clr-to-do: rgb(89, 141, 236);
+  --clr-in-progress: rgb(252, 164, 0);
+  --clr-done: rgb(36, 231, 36);
+
+  --a-a: #FBF8CC;
+  --a-b: #F6EF8E;
+  --b-a: #FDE4CF;
+  --b-b: #FABC89;
+  --c-a: #FFCFD2;
+  --c-b: #FF99A0;
+  --d-a: #F1C0E8;
+  --d-b: #E99BDB;
+  --e-a: #CFBAF0;
+  --e-b: #AD8AE5;
+  --f-a: #A3C4F3;
+  --f-b: #6FA3EC;
+  --g-a: #90DBF4;
+  --g-b: #58C9EE;
+  --h-a: #8EECF5;
+  --h-b: #43E0EF;
+  --i-a: #98F5E1;
+  --i-b: #6AF0D3;
+  --j-a: #B9FBC0;
+  --j-b: #78F785;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, input * {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--clr-light-bg);
+}
