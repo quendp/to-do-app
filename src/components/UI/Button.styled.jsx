@@ -15,7 +15,7 @@ export const ButtonSet = styled.div`
 export const SubmitBtn = styled.button`
   background-color: var(--clr-black-100);
   padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
+  border-radius: 3rem;
   color: var(--clr-white-000);
 
   &:hover,
@@ -25,13 +25,13 @@ export const SubmitBtn = styled.button`
 `;
 
 export const CancelBtn = styled.button`
-  background-color: var(--clr-white-900);
+  background-color: transparent;
   padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
-  color: var(--clr-white-000);
+  border-radius: 3rem;
+  color: var(--clr-black-100);
 
   &:hover,
   &:active {
-    background-color: var(--clr-black-300);
+    text-shadow: 0 0 18px var(--clr-glass-bg);
   }
 `;

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --clr-light-bg: rgb(255, 255, 255);
-  --clr-dark-bg: rgb(31, 31, 32);
+  --clr-light-bg: rgb(248, 248, 248);
+  --clr-dark-bg: rgb(10, 3, 37);
+  --clr-glass-bg: rgba(14, 12, 20, 0.6);
   --clr-white-000: rgb(255, 255, 255);
   --clr-white-100: rgb(241, 237, 237);
   --clr-white-200: rgb(230, 230, 230);
@@ -16,6 +17,8 @@
   --clr-to-do: rgb(89, 141, 236);
   --clr-in-progress: rgb(252, 164, 0);
   --clr-done: rgb(36, 231, 36);
+  --clr-form: rgb(238, 238, 241);
+
 
   --a-a: #FBF8CC;
   --a-b: #F6EF8E;

@@ -6,7 +6,7 @@ import {
   TaskTitle,
   TaskDesc,
   InputSelect,
-  InputDate
+  InputDate,
 } from "./TaskInput.styled";
 
 const TaskInput = (props) => {
@@ -167,13 +167,14 @@ const TaskInput = (props) => {
           id="title"
           onChange={titleChangeHandler}
           value={enteredTitle}
-          maxlength="200"
+          maxLength="200"
           required
+          autoFocus
         />
         <label htmlFor="title">Add Title</label>
       </TaskTitle>
       <InputGroup>
-        <InputSelect enteredColor={enteredStatus == "to do" ? "--f-a": enteredStatus == "in progress" ? "--b-b": "--j-a" }>
+        <InputSelect>
           <label htmlFor="status">Status : </label>
           <select
             name="status"
@@ -255,9 +256,8 @@ const TaskInput = (props) => {
           name="description"
           onChange={descChangeHandler}
           value={enteredDesc}
-          placeholder="Add description"
+          placeholder="Add description (optional)"
         >
-          Type your task description here...
         </textarea>
       </TaskDesc>
       <ButtonSet>

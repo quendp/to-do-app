@@ -6,7 +6,7 @@ export const Card = styled.li`
   max-width: 21rem;
   width: 90%;
   border-radius: 1rem;
-  padding: 2.5rem;
+  padding: 2rem;
   margin: 0.8rem;
   display: flex;
   flex-direction: column;

@@ -11,6 +11,7 @@ const TaskList = (props) => {
           id={task.id}
           task={task}
           onDelete={props.onDeleteTask}
+          showCard={props.onShowCard}
         />
       ))}
     </ListWrapper>

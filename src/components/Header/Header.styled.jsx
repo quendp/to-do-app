@@ -2,19 +2,19 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 2rem;
-    background-color: var(--clr-white-100);
-    border-radius: 1rem;
+    background-color: var(--clr-white-300);
+    border-radius: 5rem;
 `;
 
 export const AddTaskBtn = styled.button`
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
     background-color: var(--clr-black-100);
     color: var(--clr-white-000);
-    border-radius: 1rem;
+    border-radius: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

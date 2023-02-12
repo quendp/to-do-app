@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardTitle, CardStatus, CardMeta } from "./TaskItem.styled";
 
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, showCard }) => {
+  const showCardHandler = () => {
+    showCard(task.id)
+  }
   return (
-    <Card color={task.color}>
+    <Card color={task.color} onClick={showCardHandler}>
       <CardStatus status={task.status}>
         <span>{task.status}</span>
       </CardStatus>

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledInput = styled.form`
-  background-color: var(--clr-white-000);
-  border: 1px solid var(--clr-black-000);
+  background-color: var(--clr-form);
+  box-shadow: 0px 0px 5px var(--clr-glass-bg);
   max-width: 50rem;
   width: 100%;
   padding: 2rem 3rem;
@@ -19,6 +19,7 @@ export const StyledInput = styled.form`
   & * {
     margin: 0.25rem;
   }
+
 `;
 
 export const TaskTitle = styled.div`
@@ -97,7 +98,7 @@ export const InputDate = styled.div`
   width: 100%;
 
   & input {
-    width: 70%;
+    width: 65%;
     font-size: 1rem;
     height: 2rem;
     border: none;
