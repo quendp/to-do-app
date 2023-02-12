@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const StyledInput = styled.form`
-  background-color: var(--clr-white-100);
+  background-color: var(--clr-white-000);
+  border: 1px solid var(--clr-black-000);
   max-width: 50rem;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 3rem;
   border-radius: 1rem;
-  box-shadow:  5px 5px 10px -5px var(--clr-black-300);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 
   & div {
     margin-bottom: 0.5rem;
@@ -31,6 +36,7 @@ export const TaskTitle = styled.div`
 
   & label {
     position: absolute;
+    color: var(--clr-white-900);
     top: ${(props) => (props.enteredTitle.length > 0 ? "-1rem" : "0")};
     letter-spacing: 1px;
     left: 0.5rem;
@@ -53,7 +59,7 @@ export const TaskDesc = styled.div`
     border: 1px solid var(--clr-black-300);
     width: 100%;
     height: 10rem;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem;
     font-size: 1rem;
     resize: none;
     border-radius: 1rem;
@@ -77,13 +83,12 @@ export const InputSelect = styled.div`
   width: 100%;
 
   & select {
-    width: 50%;
     font-size: 1rem;
     height: 2rem;
-    border: none;
+    border: 1px solid var(--clr-black-000);
     outline: none;
-    border-radius: 0.5rem;
-    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    padding: 0rem 1rem;
     background-color: ${(props) => "var("+(props.enteredColor) + ")"};
   }
 `;

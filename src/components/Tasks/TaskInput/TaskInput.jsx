@@ -28,7 +28,7 @@ const TaskInput = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredDesc, setEnteredDesc] = useState("");
   const [enteredStatus, setEnteredStatus] = useState("to do");
-  const [enteredColor, setEnteredColor] = useState("--a");
+  const [enteredColor, setEnteredColor] = useState("--c");
   const [enteredSDateTime, setEnteredSDateTime] = useState(
     `${currentDate}T${currentTime}`
   );
@@ -154,7 +154,7 @@ const TaskInput = (props) => {
     setEnteredTitle("");
     setEnteredDesc("");
     setEnteredStatus("to do");
-    setEnteredColor("--a");
+    setEnteredColor("--c");
     setEnteredSDateTime(`${currentDate}T${currentTime}`);
     setEnteredDDateTime(`${currentDate}T${currentTime}`);
   };
@@ -167,23 +167,23 @@ const TaskInput = (props) => {
           id="title"
           onChange={titleChangeHandler}
           value={enteredTitle}
+          maxlength="200"
           required
         />
         <label htmlFor="title">Add Title</label>
       </TaskTitle>
       <InputGroup>
-        <InputSelect enteredColor={enteredStatus == "to do" ? "--clr-to-do": enteredStatus == "in progress" ? "--clr-in-progress": "--clr-done" }>
+        <InputSelect enteredColor={enteredStatus == "to do" ? "--f-a": enteredStatus == "in progress" ? "--b-b": "--j-a" }>
           <label htmlFor="status">Status : </label>
           <select
             name="status"
             id="status"
             onChange={statusChangeHandler}
             value={enteredStatus}
-            style={{ color: "var(--clr-white-000)"}}
           >
-            <option value="to do"  style={{ color: "var(--clr-white-000)", backgroundColor: "var(--clr-to-do)"}}>To Do</option>
-            <option value="in progress"  style={{ color: "var(--clr-white-000)", backgroundColor: "var(--clr-in-progress)"}}>In Progress</option>
-            <option value="done"  style={{ color: "var(--clr-white-000)", backgroundColor: "var(--clr-done)"}}>Done</option>
+            <option value="to do">To Do</option>
+            <option value="in progress">In Progress</option>
+            <option value="done">Done</option>
           </select>
         </InputSelect>
         <InputSelect enteredColor={enteredColor+"-a"}>

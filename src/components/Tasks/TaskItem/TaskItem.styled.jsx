@@ -2,18 +2,19 @@ import styled from "styled-components";
 
 export const Card = styled.li`
   background-color: ${(props) => props.color};
-  min-height: 15rem;
-  max-width: 22rem;
+  min-height: 10rem;
+  max-width: 21rem;
   width: 90%;
   border-radius: 1rem;
-  padding: 1rem 2rem;
-  margin: 1rem;
+  padding: 2.5rem;
+  margin: 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   box-shadow: 5px 5px 10px -10px var(--clr-black-300);
   transition: box-shadow 400ms ease-in-out;
+  position: relative;
 
   &:hover {
     box-shadow: 5px 5px 10px -5px var(--clr-black-300);
@@ -21,20 +22,17 @@ export const Card = styled.li`
 `;
 
 export const CardStatus = styled.div`
-    color: var(--clr-white-000);
-    background-color: ${(props) => {
-        if (props.status == "in progress") return "var(--clr-in-progress)"
-        else if (props.status == "to do") return "var(--clr-to-do)"
-        else return "var(--clr-done)"
-    }};
+    color: var(--clr-white-900);
     text-transform: uppercase;
     font-size: 0.7rem;
+    font-weight: 800;
     border-radius: 0.7rem;
     padding: 0.4rem 1rem;
     letter-spacing: 0.8px;
     margin-bottom: 1rem;
-    align-self: end;
-    font-weight: 600;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 `;
 
 export const CardTitle = styled.h3`

@@ -7,7 +7,9 @@ const TaskItem = ({ task }) => {
       <CardStatus status={task.status}>
         <span>{task.status}</span>
       </CardStatus>
-      <CardTitle>{task.title}</CardTitle>
+      <CardTitle color={task.accent}>
+        {task.title}
+      </CardTitle>
       <CardMeta accent={task.accent}>
         <p>
             Start : &nbsp;&nbsp;
